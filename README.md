@@ -1,4 +1,8 @@
 # Swift
-Study version
-Book - Swift 4.2 Xcode 10.x UIKit
-My - Swift 5.1 Xcode 11.3 iOS 13.2
+
+## Study version
+
+### Book                My     
+### Swift 4.2          Swift 5.1
+### Xcode 10.x      Xcode 11.3
+### UIKit                UIKit
