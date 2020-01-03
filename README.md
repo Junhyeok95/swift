@@ -1,8 +1,4 @@
-# Swift
+# Swift (UIKit)
 
-## Study version
-
-### Book                My     
-### Swift 4.2          Swift 5.1
-### Xcode 10.x      Xcode 11.3
-### UIKit                UIKit
+## 本 - Swift 4.2   Xcode 10.x
+## 私 - Swift 5.1   Xcode 11.3
