@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         let datePickerView = sender
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM-dd HH:mm:ss EEE"
+        formatter.dateFormat = "MM-dd HH:mm EEE"
         lblPickerTime.text = "選択時間：" + formatter.string(from: datePickerView.date)
 
         // hh 시간, mm 분, aaa AM/PM
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         let date = NSDate()
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM-dd HH:mm EEE"
+        formatter.dateFormat = "MM-dd HH:mm:ss EEE"
         lblCurrentTime.text = "現在時間：" + formatter.string(from: date as Date)
 
         // hh 시간, mm 분, aaa AM/PM
