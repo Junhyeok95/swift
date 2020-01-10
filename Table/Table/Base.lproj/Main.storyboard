@@ -24,7 +24,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Fct-Ry-i0T" kind="show" identifier="sgDetail" trigger="accessoryAction" id="p0z-WP-Xo3"/>
+                                    <segue destination="Fct-Ry-i0T" kind="show" identifier="sgDetail" id="yAW-Do-qNt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzV-7H-IiI">
-                                <rect key="frame" x="20" y="219" width="374" height="21"/>
+                                <rect key="frame" x="20" y="219" width="374" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -69,7 +69,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="aki-2w-mjr"/>
                     <connections>
-                        <outlet property="lblItem" destination="lzV-7H-IiI" id="YTU-CH-Epd"/>
+                        <outlet property="lblItem" destination="lzV-7H-IiI" id="Y2H-xr-Tcf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH3-4a-3EE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

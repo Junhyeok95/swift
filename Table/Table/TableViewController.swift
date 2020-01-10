@@ -25,6 +25,7 @@ class TableViewController: UITableViewController {
         self.navigationItem.leftBarButtonItem = self.editButtonItem // 오른쪽은 삭제가 있으니 수정을 왼쪽에 추가
     }
     
+    // 뷰가 노출될 준비가 끝났을 때 호출
     override func viewWillAppear(_ animated: Bool) {
         tvListView.reloadData()
     }
@@ -105,9 +106,6 @@ class TableViewController: UITableViewController {
         return true
     }
     */
-    
-    
-
     
     // MARK: - Navigation
 
