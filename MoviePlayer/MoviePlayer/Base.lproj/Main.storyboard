@@ -30,6 +30,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-xW-V9g">
                                         <rect key="frame" x="0.0" y="32" width="382" height="313.5"/>
                                         <state key="normal" title="Button" image="FastTyping.jpg"/>
+                                        <connections>
+                                            <action selector="btnPlayInternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgt-pg-DIf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -48,6 +51,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cm-lg-2il">
                                         <rect key="frame" x="0.0" y="32" width="382" height="313.5"/>
                                         <state key="normal" title="Button" image="Fireworks.jpg"/>
+                                        <connections>
+                                            <action selector="btnPlayExternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cna-3Z-kEF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
