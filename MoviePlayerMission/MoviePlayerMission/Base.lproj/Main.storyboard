@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoviePlayerMission" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sJR-2D-aRK">
+                                <rect key="frame" x="16" y="64" width="382" height="154.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 내부 비디오 mp4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyW-Ro-bYc">
+                                        <rect key="frame" x="123" y="0.0" width="136.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="YDC-RV-awc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epb-nP-TA0">
+                                        <rect key="frame" x="0.0" y="20" width="382" height="134.5"/>
+                                        <state key="normal" title="Button" image="FastTyping.jpg"/>
+                                        <connections>
+                                            <action selector="btnPlayInternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKa-Ae-f5M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-wg-gEt">
+                                <rect key="frame" x="16" y="687.5" width="382" height="154.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 내부 비디오 4 mov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff9-MH-tPE">
+                                        <rect key="frame" x="116.5" y="0.0" width="149" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="6Hs-G5-fRk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-e4-QUc">
+                                        <rect key="frame" x="0.0" y="20" width="382" height="134.5"/>
+                                        <state key="normal" title="Button" image="Seascape.jpg"/>
+                                        <connections>
+                                            <action selector="btnPlayInternalMovie4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zya-vq-zyE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DAW-fY-CRy">
+                                <rect key="frame" x="16" y="513" width="382" height="154.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 내부 비디오 3 mov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfk-Hr-DmX">
+                                        <rect key="frame" x="116.5" y="0.0" width="149" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="lmT-zB-mCn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNt-1t-6eK">
+                                        <rect key="frame" x="0.0" y="20" width="382" height="134.5"/>
+                                        <state key="normal" title="Button" image="Mountaineering.jpg"/>
+                                        <connections>
+                                            <action selector="btnPlayInternalMovie3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1B-g6-fTT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E9U-xW-TPR">
+                                <rect key="frame" x="16" y="238.5" width="382" height="154.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 내부 비디오 2 mp4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSf-gZ-I72">
+                                        <rect key="frame" x="115.5" y="0.0" width="151" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="BLk-0I-fRO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK8-pV-hgo">
+                                        <rect key="frame" x="0.0" y="20" width="382" height="134.5"/>
+                                        <state key="normal" title="Button" image="Fireworks.jpg"/>
+                                        <connections>
+                                            <action selector="btnPlayInternalMovie2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wa-br-uuR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sJR-2D-aRK" secondAttribute="trailing" constant="16" id="3Sm-Bo-9ha"/>
+                            <constraint firstItem="E9U-xW-TPR" firstAttribute="top" secondItem="sJR-2D-aRK" secondAttribute="bottom" constant="20" id="4I9-9G-IBh"/>
+                            <constraint firstItem="E9U-xW-TPR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6Xd-2X-9fR"/>
+                            <constraint firstItem="ccn-e4-QUc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="F29-ba-IZq"/>
+                            <constraint firstItem="sJR-2D-aRK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hdb-Nl-kwu"/>
+                            <constraint firstItem="Epb-nP-TA0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="O0o-nC-MCc"/>
+                            <constraint firstItem="sJR-2D-aRK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QP9-Fk-WUf"/>
+                            <constraint firstItem="Izp-wg-gEt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="WgR-3b-Zbb"/>
+                            <constraint firstItem="Izp-wg-gEt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YJ9-W7-fNp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E9U-xW-TPR" secondAttribute="trailing" constant="16" id="dma-Pf-Ax4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DAW-fY-CRy" secondAttribute="trailing" constant="16" id="gcZ-4o-Hlw"/>
+                            <constraint firstItem="QNt-1t-6eK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="hDM-Sv-pmJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Izp-wg-gEt" secondAttribute="trailing" constant="16" id="iEE-5K-mvs"/>
+                            <constraint firstItem="Izp-wg-gEt" firstAttribute="top" secondItem="DAW-fY-CRy" secondAttribute="bottom" constant="20" id="qFw-ns-OSj"/>
+                            <constraint firstItem="DAW-fY-CRy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tSI-LS-R5q"/>
+                            <constraint firstItem="EK8-pV-hgo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="ziC-po-W2S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FastTyping.jpg" width="640" height="360"/>
+        <image name="Fireworks.jpg" width="640" height="360"/>
+        <image name="Mountaineering.jpg" width="640" height="360"/>
+        <image name="Seascape.jpg" width="640" height="360"/>
+    </resources>
+</document>
