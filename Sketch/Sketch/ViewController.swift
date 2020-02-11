@@ -51,6 +51,24 @@ class ViewController: UIViewController {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) { // 손가락을 떼었을 때 호출
+        UIGraphicsBeginImageContext(imgView.frame.size)
+        UIGraphicsGetCurrentContext()?.setStrokeColor(lineColor)
+        UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
+        UIGraphicsGetCurrentContext()?.setLineWidth(lineSize)
+        
+        imgView.image?.draw(in: CGRect(x:0, y:0, width: imgView.frame.size.width, height: imgView.frame.size.height)) // 현재 이미지를 그린다 ...
+        UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y)) // 마지막 위치 포인트를 이동시킨다
+        UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: lastPoint.x, y: lastPoint.y)) // 현재 위치까지 선을 추가한다 ...
+        UIGraphicsGetCurrentContext()?.strokePath()
+        
+        imgView.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            imgView.image = nil
+        }
     }
     
 }
