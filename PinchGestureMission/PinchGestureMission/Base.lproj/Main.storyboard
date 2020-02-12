@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zw8-yc-SFs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PinchGestureMission" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="eEQ-6v-9v0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="3IQ-gi-0Ow">
+                            <connections>
+                                <segue destination="WzM-TJ-RJm" kind="show" identifier="editBarButton" id="NDE-m6-TTc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Edit-->
+        <scene sceneID="79m-E6-hTQ">
+            <objects>
+                <viewController id="WzM-TJ-RJm" customClass="EditViewController" customModule="PinchGestureMission" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U6m-OB-LyV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xi8-IP-aAe">
+                                <rect key="frame" x="16" y="138" width="382" height="674"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Guc-qd-R0Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="674"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="QyC-tq-Spr">
+                                <rect key="frame" x="16" y="104" width="382" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="vpY-Bo-VA1"/>
+                                </constraints>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xi8-IP-aAe" firstAttribute="leading" secondItem="Y2k-tG-nhd" secondAttribute="leading" constant="16" id="E6j-ds-LqZ"/>
+                            <constraint firstItem="QyC-tq-Spr" firstAttribute="top" secondItem="Y2k-tG-nhd" secondAttribute="top" constant="16" id="HMw-r3-KXm"/>
+                            <constraint firstItem="xi8-IP-aAe" firstAttribute="top" secondItem="Y2k-tG-nhd" secondAttribute="top" constant="50" id="IpN-zH-t0A"/>
+                            <constraint firstItem="QyC-tq-Spr" firstAttribute="leading" secondItem="Y2k-tG-nhd" secondAttribute="leading" constant="16" id="J4f-ld-D6U"/>
+                            <constraint firstItem="Y2k-tG-nhd" firstAttribute="trailing" secondItem="QyC-tq-Spr" secondAttribute="trailing" constant="16" id="KM4-ck-Xkx"/>
+                            <constraint firstItem="Y2k-tG-nhd" firstAttribute="bottom" secondItem="xi8-IP-aAe" secondAttribute="bottom" constant="50" id="OGj-mW-PuL"/>
+                            <constraint firstItem="Y2k-tG-nhd" firstAttribute="trailing" secondItem="xi8-IP-aAe" secondAttribute="trailing" constant="16" id="xu5-af-0Jy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y2k-tG-nhd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit" id="sHc-1C-ZDN"/>
+                    <connections>
+                        <outlet property="imgView" destination="Guc-qd-R0Y" id="3hG-oe-fF7"/>
+                        <outlet property="pageControl" destination="QyC-tq-Spr" id="FTl-Bn-mIR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NP6-D1-Wuf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1994" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jnr-KH-bbm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zw8-yc-SFs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kaj-H7-Wgo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rao-4K-IT3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16b-ie-R2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
