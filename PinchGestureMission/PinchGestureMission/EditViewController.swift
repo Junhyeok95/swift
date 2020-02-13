@@ -8,9 +8,16 @@
 
 import UIKit
 
+protocol EditDelegate {
+    func didImageEditDone(_ controller:EditViewController, img: String, imgCnt: Int)
+}
+
 var images = [ "01.png", "02.png", "03.png", "04.png", "05.png", "06.png" ]
 
 class EditViewController: UIViewController {
+    
+    var delegate : EditDelegate?
+    var imgCount = 0
 
     @IBOutlet var imgView: UIImageView!
     @IBOutlet var pageControl: UIPageControl!
@@ -21,12 +28,12 @@ class EditViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         pageControl.numberOfPages = images.count
-        pageControl.currentPage = 0
+        pageControl.currentPage = imgCount
         
         pageControl.pageIndicatorTintColor = UIColor.green
-        pageControl.currentPageIndicatorTintColor = UIColor.red
+        pageControl.currentPageIndicatorTintColor = UIColor.blue
         
-        imgView.image = UIImage(named: images[0])
+        imgView.image = UIImage(named: images[imgCount])
         
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(EditViewController.respondToSwipeGesture(_:)))
         swipeUp.direction = UISwipeGestureRecognizer.Direction.up
@@ -85,4 +92,11 @@ class EditViewController: UIViewController {
     }
     
 
+    @IBAction func btnAddDone(_ sender: UIButton) {
+        if delegate != nil {
+//            delegate?.didImageEditDone(<#T##controller: EditViewController##EditViewController#>, img: <#T##String#>)
+            delegate?.didImageEditDone(self, img: images[pageControl.currentPage], imgCnt: pageControl.currentPage)
+        }
+        _ = navigationController?.popViewController(animated: true)
+    }
 }

@@ -14,7 +14,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vby-RZ-lBy">
+                                <rect key="frame" x="16" y="104" width="382" height="224"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nav + Swipe + Pinch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL2-5R-HHO">
+                                <rect key="frame" x="77" y="430" width="261" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vby-RZ-lBy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2wn-kx-wGZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vby-RZ-lBy" secondAttribute="trailing" constant="16" id="Cq9-Su-o4y"/>
+                            <constraint firstItem="vby-RZ-lBy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="QjI-Ym-no2"/>
+                            <constraint firstItem="vby-RZ-lBy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="cbd-sm-8nL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="eEQ-6v-9v0">
@@ -24,6 +43,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imgView" destination="vby-RZ-lBy" id="X5q-Sq-cIu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,15 +73,25 @@
                                     <constraint firstAttribute="height" constant="20" id="vpY-Bo-VA1"/>
                                 </constraints>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRB-0w-Pu4">
+                                <rect key="frame" x="16" y="820" width="382" height="30"/>
+                                <state key="normal" title="Add to Main"/>
+                                <connections>
+                                    <action selector="btnAddDone:" destination="WzM-TJ-RJm" eventType="touchUpInside" id="VcS-F8-ywh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="jRB-0w-Pu4" firstAttribute="top" secondItem="xi8-IP-aAe" secondAttribute="bottom" constant="8" id="9AG-kO-Xf5"/>
                             <constraint firstItem="xi8-IP-aAe" firstAttribute="leading" secondItem="Y2k-tG-nhd" secondAttribute="leading" constant="16" id="E6j-ds-LqZ"/>
                             <constraint firstItem="QyC-tq-Spr" firstAttribute="top" secondItem="Y2k-tG-nhd" secondAttribute="top" constant="16" id="HMw-r3-KXm"/>
                             <constraint firstItem="xi8-IP-aAe" firstAttribute="top" secondItem="Y2k-tG-nhd" secondAttribute="top" constant="50" id="IpN-zH-t0A"/>
                             <constraint firstItem="QyC-tq-Spr" firstAttribute="leading" secondItem="Y2k-tG-nhd" secondAttribute="leading" constant="16" id="J4f-ld-D6U"/>
                             <constraint firstItem="Y2k-tG-nhd" firstAttribute="trailing" secondItem="QyC-tq-Spr" secondAttribute="trailing" constant="16" id="KM4-ck-Xkx"/>
                             <constraint firstItem="Y2k-tG-nhd" firstAttribute="bottom" secondItem="xi8-IP-aAe" secondAttribute="bottom" constant="50" id="OGj-mW-PuL"/>
+                            <constraint firstItem="Y2k-tG-nhd" firstAttribute="trailing" secondItem="jRB-0w-Pu4" secondAttribute="trailing" constant="16" id="ggj-eb-Qxj"/>
+                            <constraint firstItem="jRB-0w-Pu4" firstAttribute="leading" secondItem="Y2k-tG-nhd" secondAttribute="leading" constant="16" id="oXd-ZS-pWG"/>
                             <constraint firstItem="Y2k-tG-nhd" firstAttribute="trailing" secondItem="xi8-IP-aAe" secondAttribute="trailing" constant="16" id="xu5-af-0Jy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y2k-tG-nhd"/>
